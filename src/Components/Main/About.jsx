@@ -22,7 +22,7 @@ const About = () => {
   }, [endbackend, endfrontend]);
 
   return (
-    <Container fluid>
+    <Container fluid style={{ width: '100%' }}>
       <Container className='flexs' style={{ paddingTop: '100px', paddingBottom: '100px' }}>
         <Container className='flexs ' style={{ paddingBottom: '50px' }}>
           <h1 id="ABOUT">ABOUT</h1>
@@ -30,8 +30,12 @@ const About = () => {
             <div className='anihead' style={{ height: '2px', width: '5%', backgroundColor: '#90d216' }}></div>
           </span>
         </Container>
-        <Container className=' flexs-row col-12 mb-5' style={{ gap: 5 }}>
-          <img src="https://tf-react-bieber.vercel.app/_next/image?url=%2Fimages%2Fabout-image.jpg&w=750&q=75" alt="about img" className='col-md-6' srcset="" />
+        <Container className=' flexs-row col-12 mb-5' style={{ gap: 3 }}>
+          <Container className='col-md-6'>
+            <img className='img-fluid' src="https://tf-react-bieber.vercel.app/_next/image?url=%2Fimages%2Fabout-image.jpg&w=750&q=75" alt="about-img" />
+
+          </Container>
+          {/* <img src="https://tf-react-bieber.vercel.app/_next/image?url=%2Fimages%2Fabout-image.jpg&w=750&q=75" alt="about img" className='col-md-6' srcset="" /> */}
           <Container className='flexs col-md-5 '>
             <h5>Hi, I'm <span style={{ color: '#90d216' }} >MUHAMMED SULAIMAN T</span></h5>
             <ul style={{ gap: 9, listStyle: 'outside ' }}>
@@ -80,70 +84,70 @@ const About = () => {
 
             </div>
           </div>
-        <div className="col-md-4 flexs  rounded  p-4  border border-success bg-dark">
+          <div className="col-md-4 flexs  rounded  p-4  border border-success bg-dark">
             <h6 className='flexs-row '>JS - <span className='text-success'> 80%</span></h6>
             <div className='bg-primary  border border-success  border border-success-dark' style={{ width: '100%', height: '5px', position: 'relative' }}>
               <div className='bg-success' style={{ width: '80%', height: '5px', position: 'absolute' }}></div>
 
             </div>
           </div>
-        <div className="col-md-4 flexs  rounded  p-4  border border-success bg-dark">
+          <div className="col-md-4 flexs  rounded  p-4  border border-success bg-dark">
             <h6 className='flexs-row '>BOOSTRAP - <span className='text-success'> 75%</span></h6>
             <div className='bg-primary  border border-success  border border-success-dark' style={{ width: '100%', height: '5px', position: 'relative' }}>
               <div className='bg-success' style={{ width: '75%', height: '5px', position: 'absolute' }}></div>
 
             </div>
           </div>
-        <div className="col-md-4 flexs  rounded  p-4  border border-success bg-dark">
+          <div className="col-md-4 flexs  rounded  p-4  border border-success bg-dark">
             <h6 className='flexs-row '>REACT - <span className='text-success'> 85%</span></h6>
             <div className='bg-primary  border border-success  border border-success-dark' style={{ width: '100%', height: '5px', position: 'relative' }}>
               <div className='bg-success' style={{ width: '85%', height: '5px', position: 'absolute' }}></div>
 
             </div>
           </div>
-        <div className="col-md-4 flexs  rounded  p-4  border border-success bg-dark">
+          <div className="col-md-4 flexs  rounded  p-4  border border-success bg-dark">
             <h6 className='flexs-row '>NODE JS - <span className='text-success'> 78%</span></h6>
             <div className='bg-primary  border border-success  border border-success-dark' style={{ width: '100%', height: '5px', position: 'relative' }}>
               <div className='bg-success' style={{ width: '78%', height: '5px', position: 'absolute' }}></div>
 
             </div>
           </div>
-        <div className="col-md-4 flexs  rounded  p-4  border border-success bg-dark">
+          <div className="col-md-4 flexs  rounded  p-4  border border-success bg-dark">
             <h6 className='flexs-row '>EXPRESS JS - <span className='text-success'> 79%</span></h6>
             <div className='bg-primary  border border-success  border border-success-dark' style={{ width: '100%', height: '5px', position: 'relative' }}>
               <div className='bg-success' style={{ width: '79%', height: '5px', position: 'absolute' }}></div>
 
             </div>
           </div>
-        <div className="col-md-4 flexs  rounded  p-4  border border-success bg-dark">
+          <div className="col-md-4 flexs  rounded  p-4  border border-success bg-dark">
             <h6 className='flexs-row '>MONGODB - <span className='text-success'> 82%</span></h6>
             <div className='bg-primary  border border-success  border border-success-dark' style={{ width: '100%', height: '5px', position: 'relative' }}>
               <div className='bg-success' style={{ width: '82%', height: '5px', position: 'absolute' }}></div>
 
             </div>
           </div>
-        <div className="col-md-4 flexs  rounded  p-4  border border-success bg-dark">
+          <div className="col-md-4 flexs  rounded  p-4  border border-success bg-dark">
             <h6 className='flexs-row '>GIT - <span className='text-success'> 86%</span></h6>
             <div className='bg-primary  border border-success  border border-success-dark' style={{ width: '100%', height: '5px', position: 'relative' }}>
               <div className='bg-success' style={{ width: '86%', height: '5px', position: 'absolute' }}></div>
 
             </div>
           </div>
-        <div className="col-md-4 flexs  rounded  p-4  border border-success bg-dark">
+          <div className="col-md-4 flexs  rounded  p-4  border border-success bg-dark">
             <h6 className='flexs-row '>JAVA - <span className='text-success'> 60%</span></h6>
             <div className='bg-primary  border border-success  border border-success-dark' style={{ width: '100%', height: '5px', position: 'relative' }}>
               <div className='bg-success' style={{ width: '60%', height: '5px', position: 'absolute' }}></div>
 
             </div>
           </div>
-        <div className="col-md-4 flexs  rounded  p-4  border border-success bg-dark">
+          <div className="col-md-4 flexs  rounded  p-4  border border-success bg-dark">
             <h6 className='flexs-row '>  C - <span className='text-success'> 89%</span></h6>
             <div className='bg-primary  border border-success  border border-success-dark' style={{ width: '100%', height: '5px', position: 'relative' }}>
               <div className='bg-success' style={{ width: '89%', height: '5px', position: 'absolute' }}></div>
 
             </div>
           </div>
-        <div className="col-md-4 flexs  rounded  p-4  border border-success bg-dark">
+          <div className="col-md-4 flexs  rounded  p-4  border border-success bg-dark">
             <h6 className='flexs-row '>PYTHON - <span className='text-success'> 40%</span></h6>
             <div className='bg-primary  border border-success  border border-success-dark' style={{ width: '100%', height: '5px', position: 'relative' }}>
               <div className='bg-success' style={{ width: '40%', height: '5px', position: 'absolute' }}></div>
@@ -153,15 +157,15 @@ const About = () => {
         </Container>
       </Container>
       <Container>
-      <Container className='flexs' style={{ padding: '100px' }}>
-            <h1 id="SERVICES" >MY SERVICES</h1>
-            <span className='headings' style={{ height: '2px', width: '100px', backgroundColor: 'yellow' }}>
-              <div className='anihead' style={{ height: '2px', width: '5%', backgroundColor: '#90d216' }}></div>
-            </span>
-          </Container>
-        <Container className='  p-4 text-center' style={{border:' 2px solid blueviolet'}}>
-          <circle className='p-4' style={{borderRadius:'50%',border:'1px solid blueviolet',width:'60px',height:'60px'}}>
-            <img style={{borderRadius:'50%',width:'60px'}} src={webimage} alt="webdevelopment imge" />
+        <Container className='flexs' style={{ padding: '100px' }}>
+          <h1 id="SERVICES" >MY SERVICES</h1>
+          <span className='headings' style={{ height: '2px', width: '100px', backgroundColor: 'yellow' }}>
+            <div className='anihead' style={{ height: '2px', width: '5%', backgroundColor: '#90d216' }}></div>
+          </span>
+        </Container>
+        <Container className='  p-4 text-center' style={{ border: ' 2px solid blueviolet' }}>
+          <circle className='p-4' style={{ borderRadius: '50%', border: '1px solid blueviolet', width: '60px', height: '60px' }}>
+            <img style={{ borderRadius: '50%', width: '60px' }} src={webimage} alt="webdevelopment imge" />
           </circle>
           <h2 className='text-success pt-3'>WEB DEVLOPMENT</h2>
           <p className='p-3'>Welcome to our web development services! We specialize in crafting dynamic, user-centric websites tailored to meet your specific needs. Our services include custom website development, responsive design, e-commerce solutions, content management systems (CMS), and web application development. Whether you're an individual, a start-up, or a well-established business, we're dedicated to providing you with high-quality, scalable, and cost-effective web solutions that drive your online presence forward. We focus on combining creativity and functionality to deliver websites that not only look great but also perform seamlessly across all devices. Let us bring your vision to life on the web!</p>

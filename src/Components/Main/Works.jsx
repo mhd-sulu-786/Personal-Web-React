@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './works.css'; 
+import './works.css';
 
 import { Card, Container, Row, Button } from 'react-bootstrap';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
@@ -225,7 +225,7 @@ const Works = () => {
   };
 
   return (
-    <Container fluid>
+    <Container fluid style={{ width: '100%' }}>
       <Container className="flexs" style={{ padding: '100px' }}>
         <h1 id="WORKS">WORKS</h1>
         <span className="headings" style={{ height: '2px', width: '100px', backgroundColor: 'yellow' }}>
@@ -233,7 +233,7 @@ const Works = () => {
         </span>
       </Container>
       <Container className='flexs p-3'>
-      <div className="d-flex">
+        <div className="d-flex">
           <Button variant="outline-secondary" onClick={() => filterWorks('All')} className="me-2">
             All
           </Button>
@@ -245,28 +245,28 @@ const Works = () => {
           </Button>
         </div>
       </Container>
-      
+
       <Row>
-      {works_store
-        .filter((val) => (filter === 'All' ? val : val.Maker === filter))
-        .slice(0, showMore ? works_store.length : 6)
-        .map((val, index) => {
-          return (
-            <div className="col-lg-4 col-md-6 col-sm-12 mb-3" key={index}>
-              <Card className="p-2 bg-secondary">
-                <div className="card_content">
-                  <img src={val.Image} alt={val.Name} />
-                  <div className="div-2 d-flex justify-content-center align-items-center">
-                   <a href={val.Link}> <OpenInNewIcon  style={{ backgroundColor: 'green' }} /></a>
+        {works_store
+          .filter((val) => (filter === 'All' ? val : val.Maker === filter))
+          .slice(0, showMore ? works_store.length : 6)
+          .map((val, index) => {
+            return (
+              <div className="col-lg-4 col-md-6 col-sm-12 mb-3" key={index}>
+                <Card className="p-2 bg-secondary">
+                  <div className="card_content">
+                    <img src={val.Image} alt={val.Name} />
+                    <div className="div-2 d-flex justify-content-center align-items-center">
+                      <a href={val.Link}> <OpenInNewIcon style={{ backgroundColor: 'green' }} /></a>
+                    </div>
                   </div>
-                </div>
-                <h3>{val.Name}</h3>
-                <p>{val.Maker}</p>
-              </Card>
-            </div>
-          );
-        })}
-    </Row>
+                  <h3>{val.Name}</h3>
+                  <p>{val.Maker}</p>
+                </Card>
+              </div>
+            );
+          })}
+      </Row>
 
       <div className="text-center mt-3">
         <Button variant="outline-secondary" onClick={() => setShowMore(!showMore)}>

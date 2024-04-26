@@ -8,15 +8,15 @@ import ResponsiveAppBar from './Components/Navbar/Navbar';
 
 function App() {
   return (
-  <div className='app d-flex justify-content-center align-items-center flex-column  '  >
-    <ResponsiveAppBar/>
-    <Home/>
-    <About/>
-    <Resume/>
-     <Works/>
-    <Contact/>
-    
-  </div>
+    <div className='app d-flex justify-content-center align-items-center flex-column  '  >
+      <ResponsiveAppBar />
+      <Home />
+      <About />
+      <Resume />
+      <Works />
+      <Contact />
+
+    </div>
   );
 }
 

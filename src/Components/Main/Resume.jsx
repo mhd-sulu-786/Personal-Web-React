@@ -7,14 +7,14 @@ import LaptopIcon from '@mui/icons-material/Laptop';
 const Resume = () => {
   return (
     <Container fluid>
-      <Container className='flexs' style={{ padding: '100px' }}>
+      <Container className='flexs' style={{ padding: '100px',width:'100%' }}>
             <h1 id="RESUME" >MY RESUME</h1>
             <span className='headings' style={{ height: '2px', width: '100px', backgroundColor: 'yellow' }}>
               <div className='anihead' style={{ height: '2px', width: '5%', backgroundColor: '#90d216' }}></div>
             </span>
             </Container>
             <div className='container-fluid flexs-row'>
-              <Container className='col-5 flexs'>
+              <Container className='col-md-5 flexs'>
                 <h3><AutoStoriesIcon/>Educational Qualification</h3>
                 <ul style={{listStyleType:'none'}}>
                   <strong><li>Plus Two (Humanities)</li></strong>
@@ -32,7 +32,7 @@ const Resume = () => {
                 </ul>
 
               </Container>
-              <Container className='col-5 flexs'>
+              <Container className='col-md-5 flexs'>
                 <h3><HomeRepairServiceIcon/>Working Experience</h3>
                 <ul style={{listStyleType:'none'}}>
                 <strong><li>internship (C , java , js ,boostrap)</li></strong>

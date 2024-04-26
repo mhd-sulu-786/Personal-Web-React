@@ -31,7 +31,7 @@ const Contact = () => {
     try {
       await axios.post('https://script.google.com/macros/s/AKfycbwqqQ1J7XoTS-mrh-1ONnIvscxo0rIC-9IwtuJV2pitU7oZqP6Iu8CT9A-E020DV7vq4g/exec', formData);
       alert('Success!', 'Your message has been sent successfully!', 'success');
-       setFormData({
+      setFormData({
         fullName: '',
         email: '',
         subject: '',
@@ -39,12 +39,12 @@ const Contact = () => {
       });
     } catch (error) {
       console.error('Error submitting form:', error);
-      swal('Error','An error occurred while submitting the form. Please try again later.', 'error');
+      swal('Error', 'An error occurred while submitting the form. Please try again later.', 'error');
     }
   };
 
   return (
-    <Container fluid>
+    <Container fluid style={{ width: '100%' }}>
       <Container className='flexs' style={{ padding: '100px' }}>
         <h1 id="CONTACT">CONTACT US</h1>
         <span className='headings' style={{ height: '2px', width: '100px', backgroundColor: 'yellow' }}>

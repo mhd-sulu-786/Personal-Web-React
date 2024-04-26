@@ -9,7 +9,7 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 const Home = () => {
   return (
-    <Container fluid id='HOME' style={{ height: '100vh', marginTop:'100px'}} className='d-flex justify-content-center align-items-center flex-column ' >
+    <Container fluid id='HOME' style={{ height: '100vh', marginTop:'100px',width:'100%'}} className='d-flex justify-content-center align-items-center flex-column ' >
       <div className='container-fluid h-75 text-center text-white mt-3 d-flex justify-content-center align-items-center ' >
         <Container>
           <h4> Hey i'm <h5 style={{ color: 'GREEN' }}>Muhammed Sulaiman T</h5><h5 style={{ color: 'yellow' }}>Mern Stack developer</h5></h4>

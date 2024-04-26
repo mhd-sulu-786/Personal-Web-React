@@ -13,7 +13,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 // import AdbIcon from '@mui/icons-material/Adb';
 
-const pages = ['HOME', 'ABOUT', 'RESUME','WORKS','CONTACT'];
+const pages = ['HOME', 'ABOUT', 'RESUME', 'WORKS', 'CONTACT'];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -35,8 +35,8 @@ function ResponsiveAppBar() {
   // };
 
   return (
-    <AppBar className='appbar' position="fixed" sx={{ backgroundColor: 'black' }}>
-    <Container maxWidth="xl">
+    <AppBar className='appbar' position="fixed" sx={{ backgroundColor: 'black', width: '100%', boxShadow: 'none' }}>
+      <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
             variant="h5"
@@ -51,14 +51,14 @@ function ResponsiveAppBar() {
               letterSpacing: '.3.4rem',
               color: 'inherit',
               textDecoration: 'none',
-              backgroundColor:'transprant'
+              backgroundColor: 'transprant'
             }}
             className='hover-logo'
           >
             SULU
           </Typography>
 
-          <Box className='box' sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' }}}>
+          <Box className='box' sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -69,10 +69,9 @@ function ResponsiveAppBar() {
             >
               <MenuIcon />
             </IconButton>
-            <Menu 
+            <Menu
               id="menu-appbar"
               anchorEl={anchorElNav}
-              
               anchorOrigin={{
                 vertical: 'bottom',
                 horizontal: 'left',
@@ -86,18 +85,17 @@ function ResponsiveAppBar() {
               onClose={handleCloseNavMenu}
               sx={{
                 display: { xs: 'block', md: 'none' },
-                
-
               }}
-            ><div className='boxs m-1'  >
+            >
+              <div className='boxs m-1'>
                 {pages.map((page) => (
-                <MenuItem  href={'#'+page} key={page} onClick={handleCloseNavMenu } >
-                  <Typography textAlign="center" className='text-white  '>{page}</Typography>
-                </MenuItem>
-              ))}
-            </div>
-              
+                  <MenuItem key={page} onClick={() => { handleCloseNavMenu(); window.location.href = '#' + page; }}>
+                    <Typography textAlign="center" className='text-white'>{page}</Typography>
+                  </MenuItem>
+                ))}
+              </div>
             </Menu>
+
           </Box>
           <Typography
             variant="h5"
@@ -117,12 +115,13 @@ function ResponsiveAppBar() {
           >
             SULU
           </Typography>
-          <Box   sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' },}}  >
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, }}  >
             {pages.map((page) => (
               <Button
                 key={page}
+                href={'#' + page}
                 onClick={handleCloseNavMenu}
-                href={'#'+page} 
+
                 className='hovers'
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
@@ -133,10 +132,10 @@ function ResponsiveAppBar() {
 
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="it's mhd_sulu_786" >
-                <Avatar alt="sululogo" className='logo-img' src="https://avatars.githubusercontent.com/u/144138399?v=4" />
-             
+              <Avatar alt="sululogo" className='logo-img' src="https://avatars.githubusercontent.com/u/144138399?v=4" />
+
             </Tooltip>
-            
+
           </Box>
         </Toolbar>
       </Container>
