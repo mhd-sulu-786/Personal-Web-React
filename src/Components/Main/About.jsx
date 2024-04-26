@@ -32,7 +32,7 @@ const About = () => {
         </Container>
         <Container className=' flexs-row col-12 mb-5' style={{ gap: 3 }}>
           <Container className='col-md-6'>
-            <img className='img-fluid' src="https://tf-react-bieber.vercel.app/_next/image?url=%2Fimages%2Fabout-image.jpg&w=750&q=75" alt="about-img" />
+            <img className='img-fluid' src="https://avatars.githubusercontent.com/u/144138399?v=4" alt="about-img" />
 
           </Container>
           {/* <img src="https://tf-react-bieber.vercel.app/_next/image?url=%2Fimages%2Fabout-image.jpg&w=750&q=75" alt="about img" className='col-md-6' srcset="" /> */}
