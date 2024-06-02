@@ -30,6 +30,8 @@ import img24 from '../assist/todolist html.png';
 import img25 from '../assist/spacex clone.png';
 import img26 from '../assist/wearther html.png';
 import img27 from '../assist/Hospital.png';
+import img28 from '../assist/mern curd.png';
+
 
 
 const Works = () => {
@@ -221,7 +223,7 @@ const Works = () => {
     },
     {
       Name: 'Resume Maker',
-      Image: 'https://i.etsystatic.com/17492934/r/il/9db860/3174858924/il_fullxfull.3174858924_maxq.jpg',
+      Image: img28,
       Maker: 'React',
       Description: ' made in MernStack for learning purpose',
       Link: 'https://resume-build-now.vercel.app/',
