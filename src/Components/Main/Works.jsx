@@ -29,6 +29,7 @@ import img23 from '../assist/open ai.png';
 import img24 from '../assist/todolist html.png';
 import img25 from '../assist/spacex clone.png';
 import img26 from '../assist/wearther html.png';
+import img27 from '../assist/Hospital.png';
 
 
 const Works = () => {
@@ -217,6 +218,20 @@ const Works = () => {
       Maker: 'HTML&CSS',
       Description: ' made in HTML&&CSS for learning purpose',
       Link: 'https://mhd-sulu-786.github.io/Weather/',
+    },
+    {
+      Name: 'Resume Maker',
+      Image: 'https://i.etsystatic.com/17492934/r/il/9db860/3174858924/il_fullxfull.3174858924_maxq.jpg',
+      Maker: 'React',
+      Description: ' made in MernStack for learning purpose',
+      Link: 'https://resume-build-now.vercel.app/',
+    },
+    {
+      Name: 'Hospital Management Admin',
+      Image: img27,
+      Maker: 'React',
+      Description: ' made in MernStack for learning purpose',
+      Link: 'https://hospital-management-frontend-ruby.vercel.app/',
     },
   ];
 
