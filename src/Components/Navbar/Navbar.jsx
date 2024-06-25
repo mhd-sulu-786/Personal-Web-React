@@ -106,7 +106,7 @@ function ResponsiveAppBar() {
               <div className='boxs m-1'>
                 {pages.map((page) => (
                   <MenuItem key={page} onClick={() => { handleCloseNavMenu(); window.location.href = '#' + page; }}>
-                    <Typography textAlign="center" className='text-white'>{page}</Typography>
+                    <Typography textAlign="center" className='text-black '>{page}</Typography>
                   </MenuItem>
                 ))}
               </div>
@@ -125,7 +125,7 @@ function ResponsiveAppBar() {
               fontFamily: 'monospace',
               fontWeight: 700,
               letterSpacing: '.3rem',
-              color: "black",
+              color: colorThemes[theme].textColor,
               textDecoration: 'none',
             }}
           >
