@@ -11,31 +11,47 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-// import AdbIcon from '@mui/icons-material/Adb';
 
 const pages = ['HOME', 'ABOUT', 'RESUME', 'WORKS', 'CONTACT'];
 
+const colorThemes = {
+  default: {
+    backgroundColor: 'black',
+    textColor: 'inherit',
+  },
+  light: {
+    backgroundColor: 'white',
+    textColor: 'black',
+  },
+  blue: {
+    backgroundColor: 'blue',
+    textColor: 'white',
+  },
+  green: {
+    backgroundColor: 'green',
+    textColor: 'white',
+  },
+};
+
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  // const [anchorElUser, setAnchorElUser] = React.useState(null);
+  const [theme, setTheme] = React.useState('default');
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
-  // const handleOpenUserMenu = (event) => {
-  //   setAnchorElUser(event.currentTarget);
-  // };
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
 
-  // const handleCloseUserMenu = () => {
-  //   setAnchorElUser(null);
-  // };
+  const handleThemeChange = (newTheme) => {
+    setTheme(newTheme);
+    handleCloseNavMenu();
+  };
 
   return (
-    <AppBar className='appbar' position="fixed" sx={{ backgroundColor: 'black', width: '100%', boxShadow: 'none' }}>
+    <AppBar position="sticky" sx={{ backgroundColor: colorThemes[theme].backgroundColor, width: '100%', boxShadow: 'none' }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
@@ -49,19 +65,19 @@ function ResponsiveAppBar() {
               fontFamily: 'sans-serif',
               fontWeight: 800,
               letterSpacing: '.3.4rem',
-              color: 'inherit',
+              color: colorThemes[theme].textColor,
               textDecoration: 'none',
-              backgroundColor: 'transprant'
+              backgroundColor: 'transparent'
             }}
             className='hover-logo'
           >
             SULU
           </Typography>
 
-          <Box className='box' sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
-              aria-label="account of current user"
+              aria-label="menu"
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
@@ -95,8 +111,8 @@ function ResponsiveAppBar() {
                 ))}
               </div>
             </Menu>
-
           </Box>
+
           <Typography
             variant="h5"
             noWrap
@@ -109,21 +125,20 @@ function ResponsiveAppBar() {
               fontFamily: 'monospace',
               fontWeight: 700,
               letterSpacing: '.3rem',
-              color: 'inherit',
+              color: colorThemes[theme].textColor,
               textDecoration: 'none',
             }}
           >
             SULU
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, }}  >
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button
                 key={page}
                 href={'#' + page}
                 onClick={handleCloseNavMenu}
-
                 className='hovers'
-                sx={{ my: 2, color: 'white', display: 'block' }}
+                sx={{ my: 2, color: colorThemes[theme].textColor, display: 'block' }}
               >
                 {page}
               </Button>
@@ -133,13 +148,23 @@ function ResponsiveAppBar() {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="it's mhd_sulu_786" >
               <Avatar alt="sululogo" className='logo-img' src="https://avatars.githubusercontent.com/u/144138399?v=4" />
-
             </Tooltip>
-
           </Box>
         </Toolbar>
       </Container>
+      {/* Theme selector */}
+      <Box sx={{ position: 'fixed', bottom: '20px', right: '20px', zIndex: 999 }}>
+        {Object.keys(colorThemes).map((key) => (
+          <Button
+            key={key}
+            variant="contained"
+            sx={{ mx: 1, backgroundColor: colorThemes[key].backgroundColor, color: colorThemes[key].textColor }}
+            onClick={() => handleThemeChange(key)}
+          >
+            {key.toUpperCase()}
+          </Button>
+        ))}
+      </Box>
     </AppBar>
-  );
-}
-export default ResponsiveAppBar;
+  )}
+  export default ResponsiveAppBar;

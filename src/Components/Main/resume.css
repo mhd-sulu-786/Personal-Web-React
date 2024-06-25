@@ -1,0 +1,52 @@
+.heading-underline {
+  height: 2px;
+  width: 100px;
+  background-color: yellow;
+  margin: 0 auto;
+}
+
+.anihead {
+  height: 2px;
+  width: 5%;
+  background-color: #90d216;
+  margin: 0 auto;
+  animation: expand 2s infinite;
+}
+
+@keyframes expand {
+  0% { width: 5%; }
+  50% { width: 100%; }
+  100% { width: 5%; }
+}
+
+.list-unstyled {
+  padding: 0;
+  list-style: none;
+}
+
+.list-unstyled li {
+  margin-bottom: 20px;
+}
+
+.list-unstyled strong {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.col-md-6, .col-lg-4 {
+  padding: 20px;
+}
+
+.MuiSvgIcon-root {
+  font-size: 24px;
+}
+
+h3 {
+  margin-top: 20px;
+}
+
+@media (max-width: 767px) {
+  .col-md-6, .col-lg-4 {
+    padding: 10px;
+  }
+}

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './works.css';
-
 import { Card, Container, Row, Button } from 'react-bootstrap';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import img1 from '../assist/react-ecommerce.png';
@@ -31,7 +30,6 @@ import img25 from '../assist/spacex clone.png';
 import img26 from '../assist/wearther html.png';
 import img27 from '../assist/Hospital.png';
 import img28 from '../assist/mern curd.png';
-
 
 
 const Works = () => {

@@ -4,14 +4,13 @@ import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import EmailIcon from '@mui/icons-material/Email';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import FacebookIcon from '@mui/icons-material/Facebook';
-import XIcon from '@mui/icons-material/X';
+import TwitterIcon from '@mui/icons-material/Twitter'; // Changed from XIcon to TwitterIcon for clarity
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import axios from 'axios';
 import swal from 'sweetalert';
-
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -30,7 +29,7 @@ const Contact = () => {
 
     try {
       await axios.post('https://script.google.com/macros/s/AKfycbwqqQ1J7XoTS-mrh-1ONnIvscxo0rIC-9IwtuJV2pitU7oZqP6Iu8CT9A-E020DV7vq4g/exec', formData);
-      alert('Success!', 'Your message has been sent successfully!', 'success');
+      swal('Success!', 'Your message has been sent successfully!', 'success');
       setFormData({
         fullName: '',
         email: '',
@@ -89,11 +88,11 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-6  p-4 rounded mt-3 border border-2 border-success " style={{ backgroundColor: ' #2f2c2c' }} >
+          <div className="col-md-6 p-4 rounded mt-3 border border-2 border-success " style={{ backgroundColor: '#2f2c2c' }}>
             <form onSubmit={handleSubmit}>
               <div className="mb-3">
                 <label htmlFor="fullName" className="form-label">Full Name</label>
-                <input type="text" className="form-control" id="fullName" name="fullName" placeholder="Enter Your Sweet Name" value={formData.fullName} onChange={handleChange} required />
+                <input type="text" className="form-control" id="fullName" name="fullName" placeholder="EnterYour Sweet Name" value={formData.fullName} onChange={handleChange} required />
               </div>
               <div className="mb-3">
                 <label htmlFor="email" className="form-label">Email address</label>
@@ -116,12 +115,12 @@ const Contact = () => {
         <Container>
           <p className="mb-0 text-white">© 2024 Muhammed SulaimanT</p>
           <div className='d-flex justify-content-center'>
-            <Button href='https://www.facebook.com/muhammedsulaiman.t/' className='hover-logo-icon mx-1 '><FacebookIcon /></Button>
-            <Button href='https://www.facebook.com/muhammedsulaiman.t/' className='hover-logo-icon mx-1 btn btn-dark'><XIcon /></Button>
-            <Button href='https://www.facebook.com/muhammedsulaiman.t/' className='hover-logo-icon mx-1 btn btn-dark '><GitHubIcon /></Button>
-            <Button href='https://www.facebook.com/muhammedsulaiman.t/' className='hover-logo-icon mx-1  ' style={{ backgroundImage: 'linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80)' }}><InstagramIcon /></Button>
-            <Button href='https://www.facebook.com/muhammedsulaiman.t/' className='hover-logo-icon mx-1'><LinkedInIcon /></Button>
-            <Button href='https://www.facebook.com/muhammedsulaiman.t/' className='hover-logo-icon mx-1 btn btn-success '><WhatsAppIcon /></Button>
+            <Button href='https://www.facebook.com/muhammedsulaiman.t/' className='hover-logo-icon mx-1'><FacebookIcon /></Button>
+            <Button href='https://twitter.com/' className='hover-logo-icon mx-1 btn btn-dark'><TwitterIcon /></Button>
+            <Button href='https://github.com/' className='hover-logo-icon mx-1 btn btn-dark'><GitHubIcon /></Button>
+            <Button href='https://instagram.com/' className='hover-logo-icon mx-1' style={{ backgroundImage: 'linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80)' }}><InstagramIcon /></Button>
+            <Button href='https://linkedin.com/' className='hover-logo-icon mx-1'><LinkedInIcon /></Button>
+            <Button href='https://whatsapp.com/' className='hover-logo-icon mx-1 btn btn-success'><WhatsAppIcon /></Button>
           </div>
         </Container>
       </footer>
