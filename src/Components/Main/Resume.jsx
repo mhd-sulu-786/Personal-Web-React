@@ -59,7 +59,7 @@ const Resume = () => {
                 <p><SchoolIcon /> Softroniics (7 Months)</p>
               </li>
             </ul>
-            <h3 className="mb-3" style={{ color: 'yellow' }}><LaptopIcon /> Filled Experience</h3>
+            <h3 className="mb-3 bg-yellow"><LaptopIcon /> Filled Experience</h3>
             <p><SchoolIcon /> 2.4 Years</p>
           </Col>
           <Col md={12} lg={4} className="mb-4">

@@ -55,11 +55,11 @@ const About = () => {
           <Col md={6} className="text-center">
             <h1 className="display-4 mb-3">Skills</h1>
             <Row>
-              <Col md={6} className="d-flex flex-column justify-content-center">
+              <Col md={6} className="d-flex flex-column justify-content-center text-center">
                 <SkillCircle percentage={val_1} label="FRONT END" />
               </Col>
-              <Col md={6} className="d-flex flex-column justify-content-center">
-                <SkillCircle percentage={val_2} label="BACK END" />
+              <Col md={6} className="d-flex flex-column justify-content-center text-center">
+                <SkillCircle percentage={val_2} label="BACKEND" />
               </Col>
             </Row>
           </Col>
@@ -103,8 +103,8 @@ const About = () => {
 const SkillCircle = ({ percentage, label }) => {
   return (
     <div className="d-flex flex-column justify-content-center">
-      <div className="circle-progress bg-primary rounded-circle p-4 mb-3">
-        <div className="circle-progress-child bg-success rounded-circle p-4">
+      <div className="circle-progress rounded-circle p-4 mb-3">
+        <div className="circle-progress-child rounded-circle p-4">
           <span className="display-4">{percentage}%</span>
         </div>
       </div>
@@ -117,8 +117,8 @@ const SkillBar = ({ label, percentage }) => {
   return (
     <div className="d-flex flex-column justify-content-center">
       <h6 className="lead mb-2">{label} - <span className="text-success">{percentage}%</span></h6>
-      <div className="bg-primary rounded p-2">
-        <div className="bg-success" style={{ width: `${percentage}%` }}></div>
+      <div className="skill-bar rounded p-2">
+        <div className="skill-bar-inner" style={{ width: `${percentage}%` }}></div>
       </div>
     </div>
   );

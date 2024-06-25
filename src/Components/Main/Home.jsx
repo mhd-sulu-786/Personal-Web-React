@@ -16,19 +16,19 @@ const Home = () => {
       id='home'
       className='h-100 d-flex flex-column justify-content-center align-items-center'
       style={{
-        backgroundColor: '#1d1f21',
-        color: '#e8e8e8',
+        backgroundColor: '#6E6E6E',
+        color: 'white',
         padding: '20px',
       }}
     >
       <div className='container-fluid h-75 text-center mt-3'>
         <h4>
           Hey, I'm{' '}
-          <span style={{ color: '#4caf50' }}>Muhammed Sulaiman T</span>
+          <span style={{ color: '#BCFD4C' }}>Muhammed Sulaiman T</span>
           <br />
-          <span style={{ color: '#ffc107' }}>MERN Stack Developer</span>
+          <span style={{ color: '#F92C85' }}>MERN Stack Developer</span>
         </h4>
-        <p className='mt-3 font-weight-bold' style={{ color: '#adb5bd' }}>
+        <p className='mt-3 font-weight-bold' style={{ color: '#5EBEC4' }}>
           "I'm a MERN stack developer with a passion for crafting seamless
           user experiences. With a keen eye for detail and a dedication to
           clean, efficient code, I specialize in building robust web
@@ -52,10 +52,10 @@ const Home = () => {
           Let's collaborate to bring your vision to life and create something
           truly exceptional!"
         </p>
-        <div className='social-media-links d-flex justify-content-center'>
+        <div className='social-media-links d-flex justify-content-center align-items-center '>
           <Button
             href='https://www.facebook.com/muhammedsulaiman.t/'
-            className='hover-logo-icon mx-1'
+            className='hover-logo-icon mx-1 d-flex justify-content-center align-items-center '
             style={{
               backgroundColor: '#4267B2',
               borderColor: 'transparent',
@@ -69,7 +69,7 @@ const Home = () => {
           </Button>
           <Button
             href='https://www.x.com/'
-            className='hover-logo-icon mx-1 btn btn-dark'
+            className='hover-logo-icon mx-1 btn btn-dark  d-flex justify-content-center align-items-center'
             style={{
               borderRadius: '50%',
               width: '40px',
@@ -80,7 +80,7 @@ const Home = () => {
           </Button>
           <Button
             href='https://www.github.com/'
-            className='hover-logo-icon mx-1 btn btn-dark'
+            className='hover-logo-icon mx-1 btn btn-dark  d-flex justify-content-center align-items-center'
             style={{
               borderRadius: '50%',
               width: '40px',
@@ -91,7 +91,7 @@ const Home = () => {
           </Button>
           <Button
             href='https://www.instagram.com/'
-            className='hover-logo-icon mx-1'
+            className='hover-logo-icon mx-1  d-flex justify-content-center align-items-center'
             style={{
               backgroundImage:
                 'linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80)',
@@ -106,7 +106,7 @@ const Home = () => {
           </Button>
           <Button
             href='https://www.linkedin.com/'
-            className='hover-logo-icon mx-1'
+            className='hover-logo-icon mx-1  d-flex justify-content-center align-items-center'
             style={{
               backgroundColor: '#0077B5',
               borderColor: 'transparent',
@@ -120,7 +120,7 @@ const Home = () => {
           </Button>
           <Button
             href='https://www.whatsapp.com/'
-            className='hover-logo-icon mx-1 btn btn-success'
+            className='hover-logo-icon mx-1 btn btn-success  d-flex justify-content-center align-items-center'
             style={{
               borderRadius: '50%',
               width: '40px',
@@ -132,7 +132,7 @@ const Home = () => {
         </div>
       </div>
       <div className='scroll-down d-flex justify-content-center align-items-end p-5 mt-2'>
-        <p style={{ color: 'rgb(133, 124, 124)' }}>
+        <p style={{ color: "#BCFD4C" }}>
           <ArrowDownwardIcon className='down-arrow' /> SCROLL DOWN
         </p>
       </div>
