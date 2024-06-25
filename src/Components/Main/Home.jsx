@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <Container
       fluid
-      id='home'
+      id='HOME'
       className='h-100 d-flex flex-column justify-content-center align-items-center'
       style={{
         backgroundColor: '#6E6E6E',
