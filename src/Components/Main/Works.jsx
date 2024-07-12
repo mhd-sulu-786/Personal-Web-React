@@ -235,9 +235,9 @@ const Works = () => {
       Link: 'https://hospital-management-frontend-ruby.vercel.app/',
     },{
       Name: 'Ecommerce (Mern)',
-      Image: img28,
+      Image: img29,
       Maker: 'React',
-      Description: 'made in react for learning purpose',
+      Description: 'made in Mern for learning purpose',
       Link: 'https://luxeshopper.vercel.app/',
     }
   ];
