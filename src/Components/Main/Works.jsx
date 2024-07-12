@@ -30,7 +30,7 @@ import img25 from '../assist/spacex clone.png';
 import img26 from '../assist/wearther html.png';
 import img27 from '../assist/Hospital.png';
 import img28 from '../assist/mern curd.png';
-import img29 from '../assist/mern curd.png';
+import img29 from '../assist/ECOMMERCE.png';
 
 
 const Works = () => {
