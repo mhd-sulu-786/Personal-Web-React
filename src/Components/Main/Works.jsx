@@ -30,6 +30,7 @@ import img25 from '../assist/spacex clone.png';
 import img26 from '../assist/wearther html.png';
 import img27 from '../assist/Hospital.png';
 import img28 from '../assist/mern curd.png';
+import img29 from '../assist/mern curd.png';
 
 
 const Works = () => {
@@ -232,7 +233,13 @@ const Works = () => {
       Maker: 'React',
       Description: ' made in MernStack for learning purpose',
       Link: 'https://hospital-management-frontend-ruby.vercel.app/',
-    },
+    },{
+      Name: 'Ecommerce (Mern)',
+      Image: img28,
+      Maker: 'React',
+      Description: 'made in react for learning purpose',
+      Link: 'https://luxeshopper.vercel.app/',
+    }
   ];
 
   const filterWorks = (maker) => {
