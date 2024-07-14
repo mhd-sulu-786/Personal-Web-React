@@ -1,7 +1,11 @@
  
 
 * {
-  color: white;
+font-family:'serif';
+font-smooth: always;
+font-style: italic;
+font-weight: lighter;
+color:'white';
 }
 
 

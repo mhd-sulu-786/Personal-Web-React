@@ -235,9 +235,9 @@ const Works = () => {
       Link: 'https://hospital-management-frontend-ruby.vercel.app/',
     },{
       Name: 'Ecommerce (Mern)',
-      Image: img28,
+      Image: img29,
       Maker: 'React',
-      Description: 'made in react for learning purpose',
+      Description: 'made in Mern for learning purpose',
       Link: 'https://luxeshopper.vercel.app/',
     }
   ];
@@ -247,16 +247,16 @@ const Works = () => {
   };
 
   return (
-    <Container fluid style={{ width: '100%' }}>
-      <Container className="flexs" style={{ padding: '100px' }}>
+    <Container fluid style={{ width: '100%' ,backgroundColor:'whitesmoke',paddingBottom:'5px'}} >
+      <Container className="flexs" style={{ paddingTop: '100px',marginBottom:'10px' }}>
         <h1 id="WORKS">WORKS</h1>
-        <span className="headings" style={{ height: '2px', width: '100px', backgroundColor: 'yellow' }}>
-          <div className="anihead" style={{ height: '2px', width: '5%', backgroundColor: '#90d216' }}></div>
+        <span className="headings" style={{ height: '2px', width: '100px', backgroundColor: 'black' }}>
+          <div className="anihead" style={{ height: '2px', width: '5%', backgroundColor: 'white' }}></div>
         </span>
       </Container>
-      <Container className='flexs p-3'>
+      <Container className='flexs p-1'>
         <div className="d-flex">
-          <Button variant="outline-secondary" onClick={() => filterWorks('All')} className="me-2">
+          <Button variant="outline-secondary" onClick={() => filterWorks('All')} className="me-2 ">
             All
           </Button>
           <Button variant="outline-secondary" onClick={() => filterWorks('React')} className="me-2">
@@ -275,11 +275,11 @@ const Works = () => {
           .map((val, index) => {
             return (
               <div className="col-lg-4 col-md-6 col-sm-12 mb-3" key={index}>
-                <Card className="p-2 bg-secondary">
+                <Card className="p-2 bg-dark">
                   <div className="card_content">
                     <img src={val.Image} alt={val.Name} />
                     <div className="div-2 d-flex justify-content-center align-items-center">
-                      <a href={val.Link}> <OpenInNewIcon style={{ backgroundColor: 'green' }} /></a>
+                      <a href={val.Link}> <OpenInNewIcon style={{ backgroundColor: 'transparent',color:'black' }} /></a>
                     </div>
                   </div>
                   <h3>{val.Name}</h3>
