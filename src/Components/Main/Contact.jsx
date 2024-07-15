@@ -4,7 +4,7 @@ import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import EmailIcon from '@mui/icons-material/Email';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import FacebookIcon from '@mui/icons-material/Facebook';
-import TwitterIcon from '@mui/icons-material/Twitter';
+import XIcon from '@mui/icons-material/X';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -110,14 +110,83 @@ const Contact = () => {
       <footer className='w-100 mx-0 p-1 mt-3' style={{ backgroundColor: '#000000', color: '#FFFFFF' }}>
         <Container className='p-2'>
           <p className="mb-0 text-white text-center">© 2024 Muhammed SulaimanT</p>
-          <div className='d-flex justify-content-center'>
-            <Button href='https://www.facebook.com/muhammedsulaiman.t/' className='hover-logo-icon mx-1'><FacebookIcon  className='text-white' /></Button>
-            <Button href='https://twitter.com/' className='hover-logo-icon mx-1'><TwitterIcon  className='text-white' /></Button>
-            <Button href='https://github.com/' className='hover-logo-icon mx-1'><GitHubIcon  className='text-white' /></Button>
-            <Button href='https://instagram.com/' className='hover-logo-icon mx-1' style={{ backgroundImage: 'linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80)' }}><InstagramIcon  className='text-white' /></Button>
-            <Button href='https://linkedin.com/' className='hover-logo-icon mx-1'><LinkedInIcon  className='text-white' /></Button>
-            <Button href='https://whatsapp.com/' className='hover-logo-icon mx-1 btn btn-success'><WhatsAppIcon className='text-white' /></Button>
-          </div>
+          <div className='social-media-links d-flex justify-content-center align-items-center mb-2 gap-2'>
+          <Button
+            href='https://www.facebook.com/muhammedsulaiman.t/'
+            className='hover-logo-icon mx-1 d-flex justify-content-center align-items-center text-white'
+            style={{
+              backgroundColor: '#4267B2',
+              borderColor: 'none',
+              borderRadius: '50%',
+              width: '40px',
+              height: '40px',
+            }}
+          >
+            <FacebookIcon className='text-white' />
+          </Button>
+          <Button
+            href='https://x.com/mhd_sulu_786'
+            className='hover-logo-icon mx-1 btn btn-dark d-flex justify-content-center align-items-center bg-dark'
+            style={{
+              borderRadius: '50%',
+              width: '40px',
+              height: '40px',
+            }}
+          >
+            <XIcon className='text-white' />
+          </Button>
+          <Button
+            href='https://github.com/mhd-sulu-786'
+            className='hover-logo-icon mx-1 btn btn-dark d-flex justify-content-center align-items-center bg-dark'
+            style={{
+              borderRadius: '50%',
+              width: '40px',
+              height: '40px',
+            }}
+          >
+            <GitHubIcon className='text-white' />
+          </Button>
+          <Button
+            href='https://www.instagram.com/mhd_sulu_786'
+            className='hover-logo-icon mx-1 d-flex justify-content-center align-items-center'
+            style={{
+              backgroundImage: 'linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80)',
+              borderColor: 'transparent',
+              color: 'white',
+              borderRadius: '50%',
+              width: '40px',
+              height: '40px',
+            }}
+          >
+            <InstagramIcon className='text-white' />
+          </Button>
+          <Button
+            href='https://www.linkedin.com/in/muhammad-sulaiman-t-6b6141245/'
+            className='hover-logo-icon mx-1 d-flex justify-content-center align-items-center'
+            style={{
+              backgroundColor: '#0077B5',
+              borderColor: 'transparent',
+              color: 'white',
+              borderRadius: '50%',
+              width: '40px',
+              height: '40px',
+            }}
+          >
+            <LinkedInIcon className='text-white' />
+          </Button>
+          <Button
+            href='https://api.whatsapp.com/send/?phone=919207547803&text=Hi%20Developer&type=phone_number&app_absent=0'
+            className='hover-logo-icon mx-1 btn btn-success d-flex justify-content-center align-items-center text-white bg-success'
+            style={{
+              borderRadius: '50%',
+              width: '40px',
+              height: '40px',
+              color:'whitesmoke !important'
+            }}
+          >
+            <WhatsAppIcon className='text-white' />
+          </Button>
+        </div>
         </Container>
       </footer>
     </Container>

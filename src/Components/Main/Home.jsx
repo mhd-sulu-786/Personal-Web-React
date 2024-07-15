@@ -7,6 +7,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import image from '../assist/sulu-photo.jpg'
 
 const Home = () => {
   return (
@@ -25,9 +26,9 @@ const Home = () => {
           
           <div className='col-md-6 d-flex justify-content-center'>
             <img
-              src="../assist/sulu photo.jpg"
+              src={image}
               alt='account image'
-              className='w-75 p-2'
+              className='w-50 p-2'
               style={{ borderRadius: '50%' }}
             />
           </div>
@@ -61,7 +62,7 @@ const Home = () => {
             <FacebookIcon className='text-white' />
           </Button>
           <Button
-            href='https://www.x.com/'
+            href='https://x.com/mhd_sulu_786'
             className='hover-logo-icon mx-1 btn btn-dark d-flex justify-content-center align-items-center'
             style={{
               borderRadius: '50%',
@@ -72,7 +73,7 @@ const Home = () => {
             <XIcon className='text-white' />
           </Button>
           <Button
-            href='https://www.github.com/'
+            href='https://github.com/mhd-sulu-786'
             className='hover-logo-icon mx-1 btn btn-dark d-flex justify-content-center align-items-center'
             style={{
               borderRadius: '50%',
@@ -83,7 +84,7 @@ const Home = () => {
             <GitHubIcon className='text-white' />
           </Button>
           <Button
-            href='https://www.instagram.com/'
+            href='https://www.instagram.com/mhd_sulu_786'
             className='hover-logo-icon mx-1 d-flex justify-content-center align-items-center'
             style={{
               backgroundImage: 'linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80)',
@@ -97,7 +98,7 @@ const Home = () => {
             <InstagramIcon className='text-white' />
           </Button>
           <Button
-            href='https://www.linkedin.com/'
+            href='https://www.linkedin.com/in/muhammad-sulaiman-t-6b6141245/'
             className='hover-logo-icon mx-1 d-flex justify-content-center align-items-center'
             style={{
               backgroundColor: '#0077B5',
@@ -111,7 +112,7 @@ const Home = () => {
             <LinkedInIcon className='text-white' />
           </Button>
           <Button
-            href='https://www.whatsapp.com/'
+            href='https://api.whatsapp.com/send/?phone=919207547803&text=Hi%20Developer&type=phone_number&app_absent=0'
             className='hover-logo-icon mx-1 btn btn-success d-flex justify-content-center align-items-center text-white'
             style={{
               borderRadius: '50%',
