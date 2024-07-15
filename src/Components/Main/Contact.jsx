@@ -44,9 +44,9 @@ const Contact = () => {
   };
 
   return (
-    <Container fluid style={{ width: '100%', backgroundColor: '#000000', color: '#FFFFFF' }}>
+    <Container fluid id="CONTACT" style={{ width: '100%', backgroundColor: '#000000', color: '#FFFFFF' }}>
       <Container className='flexs' style={{ padding: '100px' }}>
-        <h1 id="CONTACT">CONTACT US</h1>
+        <h1 style={{display:{xs:'none',md:'flex}} >CONTACT US</h1>
         <span className='headings'>
           <div className='anihead'></div>
         </span>
