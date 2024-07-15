@@ -10,7 +10,7 @@ const Resume = () => {
   const defaultLayoutPluginInstance = defaultLayoutPlugin();
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = `${process.env.PUBLIC_URL}/Muhammed_Sulaiman_T_Resume.pdf`;
+    link.href = '../assist/Muhammed_Sulaiman_T_Resume.pdf'; // Ensure this path is correct
     link.download = 'Muhammed_Sulaiman_T_Resume.pdf';
     link.click();
   };
@@ -35,8 +35,8 @@ const Resume = () => {
           <Col md={12} className="mb-4 rounded">
             <div className="pdf-viewer rounded">
               <Viewer
-                 className="rounded"
-                fileUrl={`./assist/Muhammed_Sulaiman_T_Resume.pdf`}
+              
+                fileUrl="../assist/Muhammed_Sulaiman_T_Resume.pdf" // Ensure this path is correct
                 plugins={[defaultLayoutPluginInstance]}
               />
             </div>
