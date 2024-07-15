@@ -109,7 +109,7 @@ function ResponsiveAppBar() {
                   href={'#' + page}
                   onClick={handleCloseNavMenu}
                   className="hovers"
-                  sx={{ my: 2, color: colorThemes[theme].textColor, display: 'block', backgroundColor: page === 'HOME' ? 'black' : 'transparent' }}
+                  sx={{ my: 2, color: colorThemes[theme].textColor, display: 'block', backgroundColor: 'transparent' }}
                 >
                   {page}
                 </Button>
