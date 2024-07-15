@@ -42,9 +42,9 @@ const Home = () => {
           </h1>
       
             <p> "I'm a MERN stack developer passionate about crafting seamless user experiences and building robust web applications with pixel-perfect design. With expertise in dynamic websites and a commitment to high-quality, innovative solutions, I strive to push the boundaries of web development. Let's collaborate to bring your vision to life!"</p>
-            <Button href="https://www.linkedin.com/in/muhammad-sulaiman-t-6b6141245/" style={{ backgroundColor: '#28a745', borderColor: 'transparent', borderRadius: '10px', padding: '10px 20px', marginBottom: '20px' }}>
+            <a  href="https://www.linkedin.com/in/muhammad-sulaiman-t-6b6141245/" className="btn" style={{ backgroundColor: '#28a745', borderColor: 'transparent', borderRadius: '10px', padding: '10px 20px', marginBottom: '20px' }}>
               Let's get started
-            </Button>
+            </a>
           </div>
         </Container>
         <div className='social-media-links d-flex justify-content-center align-items-center mb-2 gap-2'>
