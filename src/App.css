@@ -22,11 +22,7 @@ color:'white';
 
   }
 
-  .about-img {
-    border: 2px solid black;
-    animation: border-img infinite 3.3s linear;
-    background-image: url(https://tf-react-bieber.vercel.app/_next/image?url=%2Fimages%2Fabout-image.jpg&w=750&q=75);
-  }
+
 
   .anihead {
     animation: headinganimation infinite 2.5s linear;

@@ -234,7 +234,7 @@ const Works = () => {
       Description: ' made in MernStack for learning purpose',
       Link: 'https://hospital-management-frontend-ruby.vercel.app/',
     },{
-      Name: 'Ecommerce (Mern)',
+      Name: 'LuxeShopper(Mern)',
       Image: img29,
       Maker: 'React',
       Description: 'made in Mern for learning purpose',
@@ -282,8 +282,8 @@ const Works = () => {
                       <a href={val.Link}> <OpenInNewIcon style={{ backgroundColor: 'transparent',color:'black' }} /></a>
                     </div>
                   </div>
-                  <h3>{val.Name}</h3>
-                  <p>{val.Maker}</p>
+                  <h3 className='text-white'>{val.Name}</h3>
+                  <p className='text-secondary'>{val.Maker}</p>
                 </Card>
               </div>
             );

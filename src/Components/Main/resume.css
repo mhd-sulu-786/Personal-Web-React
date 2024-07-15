@@ -1,55 +1,37 @@
+.resume-container {
+  background-color: #1b1b1d;
+}
+
+.resume-title {
+  color: #007bff;
+}
+
 .heading-underline {
-  height: 2px;
-  width: 100px;
-  background-color: #BCFD4C;
+  width: 80px;
+  height: 4px;
   margin: 0 auto;
+  background-color: #007bff;
 }
 
 .anihead {
-  height: 2px;
-  width: 5%;
-  background-color: #6E6E6E;
-  margin: 0 auto;
+  width: 40px;
+  height: 4px;
+  background-color: #007bff;
+  animation: anihead 2s infinite;
 }
 
-.list-unstyled {
-  padding: 0;
-  list-style: none;
+@keyframes anihead {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 80px;
+  }
+  100% {
+    width: 0;
+  }
 }
 
-.list-unstyled li {
-  margin-bottom: 20px;
-  color: #6E6E6E;
-}
-
-.list-unstyled strong {
-  font-weight: bold;
-  margin-right: 10px;
-  color: #BCFD4C;
-}
-
-.col-md-6, .col-lg-4 {
-  padding: 20px;
-}
-
-.MuiSvgIcon-root {
-  font-size: 24px;
-  color: #BCFD4C;
-}
-
-h3 {
-  margin-top: 20px;
-  color: #BCFD4C;
-}
-
-h1.display-4, h3.mb-3, p {
-  color: #6E6E6E;
-}
-
-h3.mb-3 {
-  color: #BCFD4C;
-}
-
-.bg-yellow {
-  color: #BCFD4C;
+.pdf-viewer {
+  height: 600px; /* Adjust the height as needed */
 }
