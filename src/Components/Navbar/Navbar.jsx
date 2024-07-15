@@ -36,7 +36,7 @@ const colorThemes = {
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const theme= 'default';
+  const theme = 'default'; // Change theme dynamically based on your logic
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -46,19 +46,19 @@ function ResponsiveAppBar() {
     setAnchorElNav(null);
   };
 
-  
+  // Function to get active page based on window location or state
 
   return (
-    <AppBar position="sticky" sx={{ backgroundColor: colorThemes['default'].backgroundColor, width: '100%', boxShadow: 'none' }} className="d-flex justify-content-center align-items-center">
-      <Col style={{
-        borderRadius: '0px 0px 10px 10px',
-        backgroundColor: '#1B1B1B',
-        color: '#9C9C9C',
-        borderBottom: '1px solid',
-      }}
+    <AppBar position="sticky" sx={{ backgroundColor: 'transparent', width: '100%', boxShadow: 'none' }} className="d-flex justify-content-center align-items-center">
+      <Col 
         className="col-12 col-md-6 p-2 mb-2"
+        style={{
+          borderRadius: '0px 0px 10px 10px',
+          color: '#9C9C9C',
+          borderBottom: '1px solid',
+          backgroundColor: '#1B1B1B', // Default background color
+        }}
         xs={{
-          
           border: 'none',
           borderBottom: '1px solid',
         }}
@@ -109,7 +109,7 @@ function ResponsiveAppBar() {
                   href={'#' + page}
                   onClick={handleCloseNavMenu}
                   className="hovers"
-                  sx={{ my: 2, color: colorThemes[theme].textColor, display: 'block' }}
+                  sx={{ my: 2, color: colorThemes[theme].textColor, display: 'block', backgroundColor: page === 'HOME' ? 'black' : 'transparent' }}
                 >
                   {page}
                 </Button>

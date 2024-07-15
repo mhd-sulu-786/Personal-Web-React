@@ -28,7 +28,7 @@ const About = () => {
   }, [endfrontend, endbackend]);
 
   return (
-    <Container fluid className="about-container p-0 " style={{borderBottom:'1px solid black'}}>
+    <Container fluid className="about-container p-0 "  id="ABOUT" style={{borderBottom:'1px solid black'}}>
       <Container className="py-5">
         <Row>
           <Col md={6} className="text-center">

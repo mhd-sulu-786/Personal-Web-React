@@ -1,37 +1,69 @@
 .resume-container {
-  background-color: #1b1b1d;
+  background-color: #f8f9fa;
+  padding: 0;
+  margin: 0;
+  font-family: 'Arial, sans-serif';
 }
 
 .resume-title {
-  color: #007bff;
+  color: #343a40;
+  font-weight: bold;
 }
 
 .heading-underline {
-  width: 80px;
+  width: 100px;
   height: 4px;
-  margin: 0 auto;
   background-color: #007bff;
+  margin: 0 auto;
 }
 
 .anihead {
-  width: 40px;
-  height: 4px;
+  animation: underline 2s infinite;
+}
+
+@keyframes underline {
+  0% { width: 0; }
+  100% { width: 100px; }
+}
+
+h3 {
+  color: #007bff;
+  font-weight: bold;
+}
+
+p, li {
+  color: #495057;
+  margin-bottom: 0.5rem;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+strong {
+  color: #212529;
+}
+
+.btn-primary {
   background-color: #007bff;
-  animation: anihead 2s infinite;
+  border-color: #007bff;
 }
 
-@keyframes anihead {
-  0% {
-    width: 0;
-  }
-  50% {
-    width: 80px;
-  }
-  100% {
-    width: 0;
-  }
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004085;
 }
 
-.pdf-viewer {
-  height: 600px; /* Adjust the height as needed */
+.list-unstyled li {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 767.98px) {
+  .resume-title {
+    font-size: 2rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+  }
 }

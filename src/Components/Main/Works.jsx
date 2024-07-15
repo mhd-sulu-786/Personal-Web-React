@@ -254,7 +254,7 @@ const Works = () => {
           <div className="anihead" style={{ height: '2px', width: '5%', backgroundColor: 'white' }}></div>
         </span>
       </Container>
-      <Container className='flexs p-1'>
+      <Container className='flexs p-1 mb-2'>
         <div className="d-flex">
           <Button variant="outline-secondary" onClick={() => filterWorks('All')} className="me-2 ">
             All

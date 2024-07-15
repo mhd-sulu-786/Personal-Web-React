@@ -6,7 +6,6 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Home = () => {
@@ -23,6 +22,15 @@ const Home = () => {
     >
       <div className='container-fluid text-center mt-3'>
         <Container className='d-flex flex-column flex-md-row justify-content-center align-items-center'>
+          
+          <div className='col-md-6 d-flex justify-content-center'>
+            <img
+              src="../assist/sulu photo.jpg"
+              alt='account image'
+              className='w-75 p-2'
+              style={{ borderRadius: '50%' }}
+            />
+          </div>
           <div className='col-md-6 text-center text-md-left'>
         
           
@@ -36,14 +44,6 @@ const Home = () => {
             <Button style={{ backgroundColor: '#28a745', borderColor: 'transparent', borderRadius: '10px', padding: '10px 20px', marginBottom: '20px' }}>
               Let's get started
             </Button>
-          </div>
-          <div className='col-md-6 d-flex justify-content-center'>
-            <img
-              src="https://avatars.githubusercontent.com/u/144138399?v=4"
-              alt='account image'
-              className='w-75 p-2'
-              style={{ borderRadius: '50%' }}
-            />
           </div>
         </Container>
         <div className='social-media-links d-flex justify-content-center align-items-center mb-2 gap-2'>
