@@ -115,7 +115,7 @@ const Contact = () => {
             href='https://www.facebook.com/muhammedsulaiman.t/'
             className='hover-logo-icon mx-1 d-flex justify-content-center align-items-center text-white'
             style={{
-              backgroundColor: '#4267B2',
+              backgroundColor: '#4267B2',  
               borderColor: 'none',
               borderRadius: '50%',
               width: '40px',
