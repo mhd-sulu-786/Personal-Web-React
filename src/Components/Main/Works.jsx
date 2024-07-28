@@ -269,7 +269,7 @@ const Works = () => {
       </Container>
 
       <Row>
-        {works_store
+        {works_store.reverse()
           .filter((val) => (filter === 'All' ? val : val.Maker === filter))
           .slice(0, showMore ? works_store.length : 6)
           .map((val, index) => {
