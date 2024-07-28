@@ -53,37 +53,37 @@ const Contact = () => {
       </Container>
       <Container fluid>
         <Container className='flexs-row gap-3'>
-          <div className="col-md-5 flexs gap-3 text-center">
+          <div className="col-md-5 flexs gap-3 text-center border pt-2 rounded">
             <div>
               <h2>Contact Information</h2>
               <hr style={{ width: '100%' }} />
             </div>
-            <div className='flexs-row col-md-12 border border-2 p-3 rounded  border-secondary text-center'>
+            <div className='flexs-row col-md-12  p-3    text-center'>
             
-              <div className="contact-info text-center">
-                <h6 className='d-flex  align-items-center gap-1'>   <LocalPhoneIcon  className='text-success' />Phone </h6>
+              <div className="contact-info  text-center">
+                <h6 className='  align-items-center gap-1'>   <LocalPhoneIcon  className='text-success' />Phone </h6>
                 <p className='text-center'>+91 9037435846</p>
                 <p className='text-center'>+91 9207547803</p>
               </div>
             </div>
-            <div className='flexs-row col-md-12 border border-2 p-3 rounded  border-secondary'>
+            <div className='flexs-row col-md-12  p-3   '>
              
               <div className="contact-info text-center">
-                <h6 className='d-flex  align-items-center gap-1'><EmailIcon  className='text-danger' />Email</h6>
+                <h6 className='  align-items-center gap-1'><EmailIcon  className='text-danger' />Email</h6>
                 <p className='text-center'>muhammedsulaimant162@gmail.com</p>
                 <p className='text-center'>muhammadsulaimant367@gmail.com</p>
               </div>
             </div>
-            <div className='flexs-row col-md-12 border border-2 p-3 rounded  border-secondary'>
+            <div className='flexs-row col-md-12  p-3   '>
              
               <div className="contact-info text-center">
-                <h6 className='d-flex  align-items-center gap-1 text-center'>  <LocationOnIcon  className='text-primary' />Address</h6>
+                <h6 className='  align-items-center gap-1 text-center'>  <LocationOnIcon  className='text-primary' />Address</h6>
                 <p className='text-center'>Thayill(H) Kongad 678631</p>
                 <p className='text-center'>Palakkad Kerala India</p>
               </div>
             </div>
           </div>
-          <div className="col-md-6 p-4 rounded mt-3 border border-1 border-secondary" style={{ backgroundColor: '#FFFFFF' }}>
+          <div className="col-md-6 p-4 rounded  " style={{ backgroundColor: '#FFFFFF' }}>
             <form onSubmit={handleSubmit}  className='d-flex flex-column justfy-content-center '>
               <div className="mb-3">
                 <label htmlFor="fullName" className="form-label">Full Name</label>

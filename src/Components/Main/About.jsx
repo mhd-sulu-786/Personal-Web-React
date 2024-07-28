@@ -32,7 +32,7 @@ const About = () => {
       <Container className="py-5">
         <Row>
           <Col md={6} className="text-center">
-            <img className="img-fluid rounded-circle about-img" src="https://avatars.githubusercontent.com/u/144138399?v=4" alt="about-img" />
+            <img className=" my-img" src="https://avatars.githubusercontent.com/u/144138399?v=4" alt="about-img" />
           </Col>
           <Col md={6} className="d-flex flex-column justify-content-center">
             <h1 className="display-4 about-title mb-3">About</h1>

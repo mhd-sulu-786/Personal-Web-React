@@ -49,18 +49,20 @@ function ResponsiveAppBar() {
   // Function to get active page based on window location or state
 
   return (
-    <AppBar position="sticky" sx={{ backgroundColor: 'transparent', width: '100%', boxShadow: 'none' }} className="d-flex justify-content-center align-items-center">
+    <AppBar position="sticky" sx={{ backgroundColor: 'transparent', width: '100%', boxShadow: 'none' }} className="d-flex justify-content-center align-items-center ">
       <Col 
-        className="col-12 col-md-6 p-2 mb-2"
+        className="col-12 col-md-6 p-2 mb-2     navbar-po"
         style={{
           borderRadius: '0px 0px 10px 10px',
-          color: '#9C9C9C',
+          color: 'rgb(219, 219, 219)',
           borderBottom: '1px solid',
-          backgroundColor: '#1B1B1B', // Default background color
+          
+          backgroundColor: 'rgb(0 0 0 / 47%)', // Default background color
         }}
         xs={{
           border: 'none',
           borderBottom: '1px solid',
+          
         }}
       >
         <Container maxWidth="xl">
@@ -108,7 +110,7 @@ function ResponsiveAppBar() {
                   key={page}
                   href={'#' + page}
                   onClick={handleCloseNavMenu}
-                  className="hovers"
+                  
                   sx={{ my: 2, color: colorThemes[theme].textColor, display: 'block', backgroundColor: 'transparent' }}
                 >
                   {page}
