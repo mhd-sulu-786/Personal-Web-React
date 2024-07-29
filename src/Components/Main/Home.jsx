@@ -36,7 +36,7 @@ const Home = () => {
           </h1>
       
             <p> "I'm a MERN stack developer passionate about crafting seamless user experiences and building robust web applications with pixel-perfect design. With expertise in dynamic websites and a commitment to high-quality, innovative solutions, I strive to push the boundaries of web development. Let's collaborate to bring your vision to life!"</p>
-            <a  href="https://www.linkedin.com/in/muhammad-sulaiman-t-6b6141245/" className="btn let-get" style={{ borderColor: 'transparent', borderRadius: '10px', padding: '10px 20px', marginBottom: '20px' }}>
+            <a  href="https://www.fiverr.com/s/m5DRRAb" className="btn let-get" style={{ borderColor: 'transparent', borderRadius: '10px', padding: '10px 20px', marginBottom: '20px' }}>
               Let's get started
             </a>
           </div>
