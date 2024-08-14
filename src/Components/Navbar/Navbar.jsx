@@ -119,7 +119,7 @@ function ResponsiveAppBar() {
             </Box>
             <Box sx={{ flexGrow: 0 }}>
               <Tooltip title="it's mhd_sulu_786">
-                <Avatar alt="sululogo" className="logo-img" src="https://avatars.githubusercontent.com/u/144138399?v=4" />
+                <Avatar alt="sululogo" className="logo-img" src="https://raw.githubusercontent.com/mhd-sulu-786/Personal-Web-React/master/src/Components/assist/sulu-photo.jpg" />
               </Tooltip>
             </Box>
           </Toolbar>
