@@ -1,0 +1,42 @@
+ApacheApache License
+Version 2.0, January 2004
+http://www.apache.org/licenses/
+
+Terms and Conditions for Use, Reproduction, and Distribution
+
+Definitions
+
+License: The terms for use, reproduction, and distribution outlined in this document.
+Licensor: The copyright owner or authorized entity that is granting the License.
+You (or "Your"): Any individual or legal entity exercising permissions under this License.
+Source form: The original, editable version of the work, including software code and configuration files.
+Object form: Any transformed or compiled version of the Source form.
+Work: The work made available under this License, including software code, web applications, and other digital assets.
+Derivative Works: Any work based on the original Work that includes modifications, enhancements, or extensions.
+Contribution: Any submission made for inclusion in the Work by the copyright owner or authorized party.
+Contributor: The Licensor and any party whose Contribution is incorporated into the Work.
+Copyright License Grant Subject to the terms of this License, each Contributor grants You a perpetual, worldwide, royalty-free copyright license to reproduce, create Derivative Works, distribute, and publicly display the Work, including source code, templates, and related assets showcased in my portfolio.
+
+Patent License Grant Each Contributor grants You a patent license to make, use, and distribute the Work, provided that you do not file litigation alleging patent infringement against the Contributor’s work.
+
+Redistribution You may redistribute the Work or Derivative Works under these conditions:
+
+Provide a copy of this License to the recipients.
+Clearly mark any changes you make to the original Work.
+Retain all notices and attributions from the original Work, including links to my portfolio (if applicable).
+Contributions All Contributions made to the Work are licensed under the same terms as this License.
+
+Trademarks This License does not grant permission to use the trade names, trademarks, or logos associated with my work or projects unless explicitly granted.
+
+Disclaimer of Warranty The Work is provided "as is," without any warranties, including but not limited to warranties of merchantability or fitness for a particular purpose. I do not guarantee that the Work will meet your needs or that the software will be free from errors or bugs.
+
+Limitation of Liability In no event shall I or any Contributor be liable for any damages resulting from the use or inability to use the Work, even if advised of the possibility of such damages.
+
+Additional Liability If you offer additional warranties or services when redistributing the Work, you do so at your own risk and responsibility.
+
+Copyright © [2024] Muhammed Sulaiman T
+Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with the License. You may obtain a copy of the License at:
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by law or agreed to in writing, the Work is provided on an "as is" basis, without warranties or conditions. See the License for the specific language governing permissions and limitations.
